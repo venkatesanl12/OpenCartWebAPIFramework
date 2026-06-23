@@ -1,7 +1,7 @@
 import { test as baseTest } from '@playwright/test';
 import { HomePage } from '../pages/HomePage';
 import { LoginPage } from '../pages/LoginPage';
-//import { CsvHelper } from '../utils/CsvHelper';
+import { CsvHelper } from '../utils/CsvHelper';
 import { SearchResultsPage } from '../pages/SearchResultsPage';
 import { ProductInfoPage } from '../pages/ProductInfoPage';
 import { BasePage } from '../pages/BasePage';
@@ -44,10 +44,10 @@ export let test = baseTest.extend<pageFixtures>({
         await use(productInfoPage);
     },
 
-    // testData: async ({ }, use) => {
-    //     let testData = CsvHelper.readCsv('src/data/loginData.csv');
-    //     await use(testData);
-    // }
+    testData: async ({ }, use) => {
+        let testData = CsvHelper.readCsv('src/data/loginData.csv');
+        await use(testData);
+    }
 
 });
 

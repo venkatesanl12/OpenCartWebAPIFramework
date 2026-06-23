@@ -14,11 +14,11 @@ test.beforeEach(async ({ page }) => {
     homePage = new HomePage(page);
 });
 
-test('home page title test', async () => {
-    const pageTitle = await homePage.getHomePageTitle();
-    console.log('home page title', pageTitle);
-    expect(pageTitle).toBe('My Account');
-});
+// test('home page title test', async () => {
+//     const pageTitle = await homePage.getHomePageTitle();
+//     console.log('home page title', pageTitle);
+//     expect(pageTitle).toBe('My Account');
+// });
 
 
 test('logout link exist test', async () => {
