@@ -23,7 +23,7 @@ test('forgot pwd link exist test', async () => {
 });
 
 test('user is able to login to app test', async () => {
-    await loginPage.doLogin('pwtestbatch@open.com', 'pw123');
+    await loginPage.doLogin(process.env.USERNAME!, process.env.PASSWORD!);
     expect.soft(await homePage.isLogoutLinkExist()).toBeTruthy();
 });
 
