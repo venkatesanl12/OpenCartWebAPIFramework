@@ -2,7 +2,7 @@ import { defineConfig, devices } from '@playwright/test';
 
 import dotenv from 'dotenv';
 
-//ENV=qa npx playwright test
+//ENV=dev npx playwright test
 const ENV = process.env.ENV || "qa";
 console.log('Running tests on Environment: ', ENV);
 dotenv.config({ path: `config/.env.${ENV}` });

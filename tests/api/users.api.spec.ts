@@ -1,7 +1,7 @@
 
 import { test, expect } from '@playwright/test';
 
-let AUTH_TOKEN = { Authorization: 'Bearer d0bf1714ac04c10dd2982e009d2dffe694a8e0b53af518cb7370e41e046a72f6' };
+let AUTH_TOKEN = { Authorization: 'Bearer 1d845aa4bebcdb0fea690adf59de3b6fb715af4f80c5eb86c3556abc69909d81' };
 
 
 test('get user test', async ({ request }) => {
@@ -72,7 +72,6 @@ test.skip('Update a user test', async ({ request }) => {
 
 
 test.skip('Delete a user test', async ({ request }) => {
-
 
     //JS Object to JSON: Serialization
     let response = await request.delete('https://gorest.co.in/public/v2/users/8501947', {

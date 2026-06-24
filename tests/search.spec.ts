@@ -29,7 +29,7 @@ for (const row of productData) {
 
 
 //common tests:
-test('comp logo exists on product page', async ({ basePage }) => {
+test('comp logo exists on product page @smoke', async ({ basePage }) => {
     expect(await basePage.isLogoVisible()).toBeTruthy();
 });
 
