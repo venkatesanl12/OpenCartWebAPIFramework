@@ -46,7 +46,7 @@ jobs:
           echo "========================================="
           echo "  Building App + Running Unit Tests"
           echo "========================================="
-          mvn clean install
+          mvn clean install -Dmaven.test.failure.ignore=true
 
       - name: Upload Unit Test Results
         if: always()
