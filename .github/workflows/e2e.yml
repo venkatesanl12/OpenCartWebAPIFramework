@@ -4,7 +4,7 @@
 # DEV REPO: jglick/simple-maven-project-with-tests
 # ═══════════════════════════════════════════════════════════════
 
-name: Master CI/CD Pipeline
+name: e2e CI/CD Pipeline
 
 on:
   workflow_dispatch:
